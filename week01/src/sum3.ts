@@ -15,7 +15,7 @@ const readLineNumberAsync: (msg: string) => Promise<number> = (msg: string) => {
   });
 };
 
-// a function to calculate the max number between three numbers
+// a function to calculate the sum of three numbers
 function sum(number1: number, number2: number, number3: number): number {
   return number1 + number2 + number3;
 }
