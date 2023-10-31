@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6", // ECMAScript version to target
+    "module": "nodenext", // Module system (commonjs, esnext, etc.)
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing for files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "outDir": "./dist", // Output directory for transpiled files
+    "rootDir": "./src" // Root directory for TypeScript source files
+  },
+  "include": ["src/**/*.ts"], // Patterns to include when compiling
+  "exclude": ["node_modules"] // Patterns to exclude when compiling
+}
