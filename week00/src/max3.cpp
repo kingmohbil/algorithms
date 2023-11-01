@@ -2,13 +2,13 @@
 
 using namespace std;
 
-template<class T>
-T max(T number1, T number2, T number3);
+// the function prototype
+int max(int number1, int number2, int number3);
 
 int main() {
 
     // the input values for the max function
-    double number1, number2, number3;
+    int number1, number2, number3;
 
     cout << "Enter three numbers separated by spaces " << endl;
     cin >> number1 >> number2 >> number3;
@@ -17,9 +17,8 @@ int main() {
     return 0;
 }
 
-template<class T>
-T max(T number1, T number2, T number3) {
-    T max = number1;
+int max(int number1, int number2, int number3) {
+    int max = number1;
     if(number2 > max) max = number2;
     if(number3 > max) max = number3;
     return max;
