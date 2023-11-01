@@ -24,10 +24,9 @@ function max(number1: number, number2: number, number3: number): number {
 }
 
 async function run() {
-  const message = 'Enter a number: ';
-  const number1 = await readLineNumberAsync(message);
-  const number2 = await readLineNumberAsync(message);
-  const number3 = await readLineNumberAsync(message);
+  const number1 = await readLineNumberAsync('Enter the first Number: ');
+  const number2 = await readLineNumberAsync('Enter the second Number: ');
+  const number3 = await readLineNumberAsync('Enter the third Number: ');
 
   console.log('The largest number is: ' + max(number1, number2, number3));
   readline.close();
