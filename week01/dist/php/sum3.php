@@ -8,9 +8,9 @@ function sum($number1, $number2, $number3) {
 }
 
 // getting the values for the sum3 algorithm
-$number1 = (float) readline("Enter a number: ");
-$number2 = (float) readline("Enter a number: ");
-$number3 = (float) readline("Enter a number: ");
+$number1 = (float) readline("Enter the first number: ");
+$number2 = (float) readline("Enter the second number: ");
+$number3 = (float) readline("Enter the third number: ");
 
 // giving the values for the sum3 algorithm
 echo 'The sum of the numbers is: ' . sum($number1, $number2, $number3);

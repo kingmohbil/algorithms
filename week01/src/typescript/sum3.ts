@@ -21,10 +21,9 @@ function sum(number1: number, number2: number, number3: number): number {
 }
 
 async function run() {
-  const message = 'Enter a number: ';
-  const number1 = await readLineNumberAsync(message);
-  const number2 = await readLineNumberAsync(message);
-  const number3 = await readLineNumberAsync(message);
+  const number1 = await readLineNumberAsync('Enter the first number: ');
+  const number2 = await readLineNumberAsync('Enter the second number: ');
+  const number3 = await readLineNumberAsync('Enter the third number: ');
 
   console.log('The sum is: ' + sum(number1, number2, number3));
   readline.close();
