@@ -15,17 +15,25 @@ const readLineNumberAsync: (msg: string) => Promise<number> = (msg: string) => {
   });
 };
 
-// a function to calculate the division of two numbers
-function division(number1: number, number2: number): number {
-  return number1 / number2;
+// a function to calculate the sum and average of three numbers
+function sumAndAverage(
+  number1: number,
+  number2: number,
+  number3: number
+): void {
+  console.log(`The sum is: ${number1 + number2 + number3}`);
+  console.log(`The average is: ${(number1 + number2 + number3) / 3}`);
 }
 
 async function run() {
+  console.log('Enter three numbers: ');
+
   const number1 = await readLineNumberAsync('Enter the first number: ');
   const number2 = await readLineNumberAsync('Enter the second number: ');
-  console.log(
-    `The division of ${number1} / ${number2} is: ${division(number1, number2)}`
-  );
+  const number3 = await readLineNumberAsync('Enter the third number: ');
+
+  sumAndAverage(number1, number2, number3);
+
   readline.close();
 }
 

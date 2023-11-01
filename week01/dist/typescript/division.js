@@ -23,15 +23,18 @@ const readLineNumberAsync = (msg) => {
         });
     });
 };
-// a function to calculate the division of two numbers
-function division(number1, number2) {
-    return number1 / number2;
+// a function to calculate the sum and average of three numbers
+function sumAndAverage(number1, number2, number3) {
+    console.log(`The sum is: ${number1 + number2 + number3}`);
+    console.log(`The average is: ${(number1 + number2 + number3) / 3}`);
 }
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
+        console.log('Enter three numbers: ');
         const number1 = yield readLineNumberAsync('Enter the first number: ');
         const number2 = yield readLineNumberAsync('Enter the second number: ');
-        console.log(`The division of ${number1} / ${number2} is: ${division(number1, number2)}`);
+        const number3 = yield readLineNumberAsync('Enter the third number: ');
+        sumAndAverage(number1, number2, number3);
         readline.close();
     });
 }
